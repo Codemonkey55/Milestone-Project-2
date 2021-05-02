@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Permanent+Marker&display=swap');
 
 /*----------------- Global styles -------------------*/
 
@@ -16,4 +16,42 @@ body {
     font-weight: normal;
     text-align: center;
     font-size: 6em;
+}
+
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+    font-family: 'Permanent Marker', cursive;
+    color: #FFBB89;
+    font-size: 3em;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.card {
+    width: 125px;
+    height: 175px;
+    background-color: #FF6600;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .game-container {
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .card {
+        margin: auto;
+    }
 }
