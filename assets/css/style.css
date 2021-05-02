@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+/*----------------- Global styles -------------------*/
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+
+/* --------------- Main menu section --------------- */
+
+.page-title {
+    font-family: 'Freckle Face', cursive;
+    color: #FF6600;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
