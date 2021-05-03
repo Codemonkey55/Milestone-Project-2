@@ -78,8 +78,13 @@ html {
     font-family: 'Freckle Face', serif;
 }
 
+.overlay-text-small {
+    font-size: .3em;
+}
+
 .overlay-text.visible {
     display: flex;
+    flex-direction: column;
     animation: overlay-grow 500ms forwards;
 }
 
@@ -137,13 +142,9 @@ html {
     border: 3px solid #676767;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 800px) {
     .game-container {
-        grid-gap: 10px;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(2, auto);
     }
-
-    .card {
-        margin: auto;
-    }
+    
 }
