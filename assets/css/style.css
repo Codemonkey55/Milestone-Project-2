@@ -41,8 +41,47 @@ body {
 .card {
     width: 125px;
     height: 175px;
-    background-color: #FF6600;
-    margin: auto;
+}
+
+.card-back:hover {
+    border: 3px solid #FFBB89;
+}
+
+.card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.card-back {
+    background-color:#FF6600;
+}
+
+.card-front {
+    background-color: #FFBB89;
+    border-color: #333;
+    border-style: solid;
+    border-width: 1px;
+    transform: rotateY(180deg);
+}
+
+.card-front:hover {
+    border: 3px solid #FF6600;
 }
 
 @media (min-width: 768px) {
