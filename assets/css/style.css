@@ -8,7 +8,7 @@ body {
 }
 
 html {
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 
@@ -93,6 +93,7 @@ html {
         background-color: rgba(0, 0, 0, 0);
         font-size: 0;
     }
+
     to {
         font-size: 10em;
         background-color: rgba(0, 0, 0, .8);
@@ -100,12 +101,16 @@ html {
 }
 
 @keyframes dance {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0);
     }
+
     25% {
         transform: rotate(-30deg);
     }
+
     75% {
         transform: rotate(30deg);
     }
@@ -127,7 +132,7 @@ html {
 
 
 .card-back {
-    background-color:#FF6600;
+    background-color: #FF6600;
 }
 
 .card-front {
@@ -135,16 +140,9 @@ html {
     border-color: #333;
     border-style: solid;
     border-width: 1px;
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg);
 }
 
 .card-front:hover {
     border: 3px solid #676767;
-}
-
-@media (max-width: 800px) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
-    
 }
